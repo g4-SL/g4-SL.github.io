@@ -37,6 +37,11 @@ ul.nav a:hover {
     background-color: transparent;
 }
 
+ul
+{
+    list-style-type: none;
+}
+
 #aboutmehr{
     border: 0;
     height: 1px;
