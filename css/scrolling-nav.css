@@ -16,10 +16,12 @@ html {
 
 @media(min-width:767px) {
     .navbar {
-        padding: 20px 0;
+        padding: 2px 0;
         -webkit-transition: background .5s ease-in-out,padding .5s ease-in-out;
         -moz-transition: background .5s ease-in-out,padding .5s ease-in-out;
         transition: background .5s ease-in-out,padding .5s ease-in-out;
+        background-color: #fff;
+        display: inline-block;
     }
 
     .top-nav-collapse {
@@ -32,9 +34,8 @@ The padding is very important to make sure the scrollspy picks up the right area
 of those sections to manage the look and feel of the site. */
 
 .intro-section {
-    height: 100%;
-    padding-top: 50px;
-    text-align: center;
+    padding-top: 25px;
+    padding-bottom: 50px;
     background: #fff;
 }
 

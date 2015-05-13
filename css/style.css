@@ -9,6 +9,47 @@ h1{
     transform: rotate(-4deg);
 }
 
+h2{
+    font-family: 'Varela Round';
+}
+
+p{
+    font-family: 'Lato';
+}
+
+#aboutme{
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 16px;
+    text-align: center;
+}
+
+ul.nav{
+    color: #000 !important;
+    font-family: 'Varela Round' !important;
+    text-transform: uppercase;
+}
+
+ul.nav a:hover {
+    color: #00ddd8 !important;
+    text-decoration: underline;
+    background-color: transparent;
+}
+
+#aboutmehr{
+    border: 0;
+    height: 1px;
+    background: #000;
+    width: 50%;
+}
+
+/*ul.nav a:focus {
+    color: #00ddd8 !important;
+    text-decoration: underline;
+    background-color: transparent;
+}*/
+
 hr{
 	border: 0;
 	height: 1px;
@@ -17,6 +58,11 @@ hr{
 	background-image: -moz-linear-gradient(left, #ccc, #333, #ccc);
 	background-image: -ms-linear-gradient(left, #ccc, #333, #ccc);
 	background-image: -o-linear-gradient(left, #ccc, #333, #ccc);
+}
+
+#navbar{
+    font-family: 'Varela Round';
+    font-size: 14px;
 }
 
 #portfolioContainer{
