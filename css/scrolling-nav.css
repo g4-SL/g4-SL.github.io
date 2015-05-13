@@ -52,10 +52,18 @@ of those sections to manage the look and feel of the site. */
     background: #fff;
 }
 
-.contact-section {
+.skills-section {
     height: 100%;
     padding-top: 50px;
     padding-bottom: 50px;
     text-align: center;
     background: #eee;
+}
+
+.travels-section {
+    height: 100%;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    text-align: center;
+    background: #fff;
 }

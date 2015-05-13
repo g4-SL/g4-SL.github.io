@@ -17,14 +17,6 @@ p{
     font-family: 'Lato';
 }
 
-#aboutme{
-    width: 50%;
-    margin-left: auto;
-    margin-right: auto;
-    font-size: 16px;
-    text-align: center;
-}
-
 ul.nav{
     color: #000 !important;
     font-family: 'Varela Round' !important;
@@ -77,4 +69,28 @@ hr{
 
 #photoshopContainer{
     padding-top: 50px;
+}
+
+#map-canvas {
+    width: 75%;
+    height: 85%;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #CCC;
+}
+
+/*container style for about me paragraph in intro section*/
+#aboutme{
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 16px;
+    text-align: center;
+}
+
+/*style skills images*/
+#skillsImg{
+    height: 200px;
+    margin-left: auto;
+    margin-right: auto;
 }

@@ -20,6 +20,10 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.js"></script>     
     <script src="js/main.js"></script> 
 
+    <!-- Google Maps -->
+     <!--  <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDPb2TPvIjiLnqnPgMGiR8iLv4V4ul31Hk"></script>-->
+    <script src="https://maps.googleapis.com/maps/api/js"></script>
+
     <!-- Scrolling Nav JavaScript -->
     <script src="js/jquery.easing.min.js"></script>
     <script src="js/scrolling-nav.js"></script>
@@ -87,7 +91,8 @@
                   <ul class="nav navbar-nav">
                     <li><a class="page-scroll" href="#portfolio">Coding</a></li>
                     <li><a class="page-scroll" href="#photoshop">Design</a></li>
-                    <li><a class="page-scroll" href="#contact">Contact</a></li>
+                    <li><a class="page-scroll" href="#skills">Skills</a></li>
+                    <li><a class="page-scroll" href="#travels">Travels</a></li>
                   </ul>
                 </nav>
             </center>
@@ -240,15 +245,43 @@
         </div>
     </section>
 
-    <!-- Contact Section -->
-    <section id="contact" class="contact-section">
+    <!-- Skills Section -->
+    <section id="skills" class="skills-section">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
-                    <h1>Contact Section</h1>
+                    <h1>Skills</h1>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-2 col-lg-offset-2 col-md-4 col-xs-6 thumb">
+                    <img class="img-responsive" src="img/skills/angular.png" alt="" id="skillsImg">
+                </div>
+                <div class="col-lg-2 col-md-4 col-xs-6 thumb">
+                    <img class="img-responsive" src="img/skills/html.png" alt="" id="skillsImg">
+                </div>
+                <div class="col-lg-2 col-md-4 col-xs-6 thumb">
+                    <img class="img-responsive" src="img/skills/css.png" alt="" id="skillsImg">
+                </div>
+                <div class="col-lg-2 col-md-4 col-xs-6 thumb">
+                    <img class="img-responsive" src="img/skills/java.png" alt="" id="skillsImg">
                 </div>
             </div>
         </div>
+    </section>
+
+
+    <!-- Contact Section -->
+    <section id="travels" class="travels-section" ng-controller="MapsCtrl">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <h1>Travels</h1>
+                </div>
+            </div>
+        </div>
+        <!-- <h2>test: {{greeting}}</h2> -->
+        <div id="map-canvas"></div>
     </section>
 
 </body>
