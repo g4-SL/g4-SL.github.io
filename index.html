@@ -8,6 +8,8 @@
     <link rel="stylesheet" href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
     <link rel="stylesheet" href="css/style.css">
     <link href="css/scrolling-nav.css" rel="stylesheet">
+    <link href="css/ngDialog.min.css" rel="stylesheet">
+    <link href="css/ngDialog-theme-default.min.css" rel="stylesheet">
     
     <!-- JS -->
     <!-- load angular, nganimate, and ui-router -->
@@ -18,7 +20,8 @@
     <script data-require="angular-resource@1.2.14" data-semver="1.2.14" src="http://code.angularjs.org/1.2.14/angular-resource.js"></script>
     <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.js"></script>     
-    <script src="js/main.js"></script> 
+    <script src="js/main.js"></script>    
+    <script src="js/ngDialog.min.js"></script> 
 
     <!-- Google Maps -->
      <!--  <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDPb2TPvIjiLnqnPgMGiR8iLv4V4ul31Hk"></script>-->
@@ -27,6 +30,11 @@
     <!-- Scrolling Nav JavaScript -->
     <script src="js/jquery.easing.min.js"></script>
     <script src="js/scrolling-nav.js"></script>
+
+
+    <!-- Processingjs -->
+    <!--    <script src="js/processingjs.min.js"></script> 
+    <canvas data-processing-sources="anything.pde"></canvas>-->
 
     <!-- FONT -->
     <link href='http://fonts.googleapis.com/css?family=Dancing+Script' rel='stylesheet' type='text/css'>
@@ -109,7 +117,7 @@
             </div>
         </div>
 
-        <div id="portfolioContainer" class="container">
+        <div id="portfolioContainer" class="container" ng-controller="dialogCtrl">
             <div class="row">
                 <div class="col-lg-6">
                     <h2>Olympia Prototype Design</h2>
@@ -127,6 +135,10 @@
                             <strong>Javascript, HTML/CSS, Ionic framework
                             </strong>
                         </li>
+<!--                         <li>Prototype:
+                            <strong><a href="" ng-click="openPicDialog()">Click here</a>
+                            </strong>
+                        </li> -->
                     </ul>
                 </div>
                 <div class="col-lg-6">
@@ -169,7 +181,7 @@
 
         <div id="portfolioContainer" class="container">
             <div class="row">
-                <div class="col-lg-8">
+                <div class="col-lg-6">
                     <h2>Penetration Testing on UBC Okanagan Athletics Database</h2>
                     <p>Discussed and analyzed the security of UBC-O Athletics registration website with the system owner and developers. Performed security tests such as replay attack, SQL injection, cross-site scripting, command injection, session hijacking, and man-in-the-middle attack on the website to determine the level of security the website provides to all related stakeholders. Reported all findings to the system owner and brainstormed for possible security solutions based on the findings of the research</p>
                     <ul class="list-inline item-details">
@@ -183,8 +195,8 @@
                         </li>
                     </ul>
                 </div>
-                <div class="col-lg-4">
-                    <img src="img/profile.png" class="img-responsive" alt="">
+                <div class="col-lg-6">
+                    <img src="img/nda.png" class="img-responsive" alt="">
                 </div>
             </div>
         </div>
@@ -201,42 +213,42 @@
 
             <div id="photoshopContainer" class="row">
                 <div class="col-lg-3 col-md-4 col-xs-6 thumb">
-                    <a class="thumbnail" href="#">
+                    <a class="thumbnail" href="">
                         <img class="img-responsive" src="img/ps/GMnov.png" alt="">
                     </a>
                 </div>
                 <div class="col-lg-3 col-md-4 col-xs-6 thumb">
-                    <a class="thumbnail" href="#">
+                    <a class="thumbnail" href="">
                         <img class="img-responsive" src="img/ps/GMjan.png" alt="">
                     </a>
                 </div>
                 <div class="col-lg-3 col-md-4 col-xs-6 thumb">
-                    <a class="thumbnail" href="#">
+                    <a class="thumbnail" href="">
                         <img class="img-responsive" src="img/ps/GMfeb.png" alt="">
                     </a>
                 </div>
                 <div class="col-lg-3 col-md-4 col-xs-6 thumb">
-                    <a class="thumbnail" href="#">
+                    <a class="thumbnail" href="">
                         <img class="img-responsive" src="img/ps/agm.png" alt="">
                     </a>
                 </div>
                 <div class="col-lg-3 col-md-4 col-xs-6 thumb">
-                    <a class="thumbnail" href="#">
+                    <a class="thumbnail" href="">
                         <img class="img-responsive" src="img/ps/movienight.png" alt="">
                     </a>
                 </div>
                 <div class="col-lg-3 col-md-4 col-xs-6 thumb">
-                    <a class="thumbnail" href="#">
+                    <a class="thumbnail" href="">
                         <img class="img-responsive" src="img/ps/grad.PNG" alt="">
                     </a>
                 </div>
                 <div class="col-lg-3 col-md-4 col-xs-6 thumb">
-                    <a class="thumbnail" href="#">
+                    <a class="thumbnail" href="">
                         <img class="img-responsive" src="img/ps/BandP.png" alt="">
                     </a>
                 </div>
                 <div class="col-lg-3 col-md-4 col-xs-6 thumb">
-                    <a class="thumbnail" href="#">
+                    <a class="thumbnail" href="">
                         <img class="img-responsive" src="img/ps/sv.jpg" alt="">
                     </a>
                 </div>
@@ -253,7 +265,7 @@
                     <h1>Skills</h1>
                 </div>
             </div>
-            <div class="row">
+            <div class="row" style="height:80%">
                 <div class="col-lg-2 col-lg-offset-2 col-md-4 col-xs-6 thumb">
                     <img class="img-responsive" src="img/skills/angular.png" alt="" id="skillsImg">
                 </div>
@@ -266,7 +278,26 @@
                 <div class="col-lg-2 col-md-4 col-xs-6 thumb">
                     <img class="img-responsive" src="img/skills/java.png" alt="" id="skillsImg">
                 </div>
+            </div><br>
+            <div class="row" style="height:80%">
+                <div class="col-lg-2 col-lg-offset-1 col-md-4 col-xs-6 thumb">
+                    <img class="img-responsive" src="img/skills/c.png" alt="" id="skillsImg">
+                </div>
+                <div class="col-lg-2 col-md-4 col-xs-6 thumb">
+                    <img class="img-responsive" src="img/skills/javascript.png" alt="" id="skillsImg">
+                </div>
+                <div class="col-lg-2 col-md-4 col-xs-6 thumb">
+                    <img class="img-responsive" src="img/skills/jquery.png" alt="" id="skillsImg">
+                </div>
+                <div class="col-lg-2 col-md-4 col-xs-6 thumb">
+                    <img class="img-responsive" src="img/skills/php.png" alt="" id="skillsImg">
+                </div>
+                <div class="col-lg-2 col-md-4 col-xs-6 thumb">
+                    <img class="img-responsive" src="img/skills/sql.png" alt="" id="skillsImg">
+                </div>
             </div>
+
+            <!--<p><canvas id="canvas1" width="200" height="200"></canvas></p> -->
         </div>
     </section>
 
