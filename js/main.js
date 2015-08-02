@@ -7,7 +7,7 @@ var app = angular.module('bodyapp',[
 	'ui.bootstrap'
 	]);
 
-app.config(function($stateProvider, $urlRouterProvider, $locationProvider) {
+app.config(function($stateProvider, $urlRouterProvider) {
     
     $stateProvider
 
@@ -71,7 +71,7 @@ app.config(function($stateProvider, $urlRouterProvider, $locationProvider) {
     // send users to the form page 
     $urlRouterProvider.otherwise('/work');
 
-    $locationProvider.html5Mode(true);
+    //$locationProvider.html5Mode(true);
 });
 
 /*directive to dynamically change the page title when the ui-router state has changed*/
