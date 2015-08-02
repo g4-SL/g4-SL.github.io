@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html ng-app="bodyapp">
 <head>
     <meta charset="utf-8">
 
@@ -37,11 +37,14 @@
     <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=Oswald:400' rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
+
+    <base href="http://g4-sl.github.io/">
+    <title>{{title}}</title>
     
 </head>
 
 <!-- apply our angular app -->
-<body ng-app="bodyapp" id="page-top">
+<body id="page-top">
 
     <!-- Header with links to different section -->
     <section id="header" class="header-section">
@@ -49,7 +52,7 @@
             <div class="row">
                 <div class="col-lg-4 col-md-6">
                     <!-- title image -->
-                    <a ui-sref="workProj">
+                    <a ui-sref="work">
                         <img src="img/title.png" class="img-responsive" alt="">
                     </a>
                 </div>
@@ -65,8 +68,8 @@
                                 <li><a ui-sref="system">System Penetration</a></li>  
                             </ul>
                         </li> -->
-                        <li><a ui-sref="workProj">Work</a></li>
-                        <li><a ui-sref="work">Photoshop</a></li>
+                        <li><a ui-sref="work">Work</a></li>
+                        <li><a ui-sref="photoshop">Photoshop</a></li>
                         <li><a ui-sref="about">About</a></li>
                       </ul>
                     </nav>
