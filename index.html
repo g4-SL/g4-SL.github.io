@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html ng-app="bodyapp">
+<head>
+    <meta charset="utf-8">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css"> 
+    <link rel="stylesheet" href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="css/nav-style.css" rel="stylesheet">
+    <link href="css/scrolling-nav.css" rel="stylesheet">
+    <link href="css/ngDialog.min.css" rel="stylesheet">
+    <link href="css/ngDialog-theme-default.min.css" rel="stylesheet">
+    
+    <!-- JS -->
+    <!-- load angular, nganimate, and ui-router -->
+    <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.3.15/angular.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.2.10/angular-ui-router.min.js"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.16/angular-animate.min.js"></script> 
+    <script src="http://angular-ui.github.com/bootstrap/ui-bootstrap-tpls-0.12.1.min.js"></script>
+    <script data-require="angular-resource@1.2.14" data-semver="1.2.14" src="http://code.angularjs.org/1.2.14/angular-resource.js"></script>
+    <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.js"></script>     
+    <script src="js/main.js"></script>    
+    <script src="js/ngDialog.min.js"></script> 
+
+    <!-- Google Maps -->
+     <!--  <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDPb2TPvIjiLnqnPgMGiR8iLv4V4ul31Hk"></script>-->
+    <script src="https://maps.googleapis.com/maps/api/js"></script>
+
+    <!-- Scrolling Nav JavaScript -->
+    <script src="js/jquery.easing.min.js"></script>
+    <script src="js/scrolling-nav.js"></script>
+
+    <!-- FONT -->
+    <link href='http://fonts.googleapis.com/css?family=Quicksand' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Oswald:400' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
+
+    <!-- <base href="http://g4-sl.github.io/"> -->
+    <title>{{title}}</title>
+    
+</head>
+
+<!-- apply our angular app -->
+<body id="page-top">
+
+    <!-- Header with links to different section -->
+    <section id="header" class="header-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 col-md-6">
+                    <!-- title image -->
+                    <a ui-sref="work">
+                        <img src="img/title.png" class="img-responsive" alt="">
+                    </a>
+                </div>
+                <div class="col-lg-8 col-md-6 text-right">
+                    <!-- navigation link align to the bottom right -->
+                    <nav class="navbar">
+                      <ul class="nav navbar-nav">
+<!--                         <li><a ui-sref="workProj" class="dropdown-toggle dropdown" data-toggle="dropdown">Work</a>
+                            <ul class="dropdown-menu">
+                                <li><a ui-sref="battle">Battle of the Ages</a></li>
+                                <li><a ui-sref="olympia">Olympia</a></li>   
+                                <li><a ui-sref="child">Child First</a></li>
+                                <li><a ui-sref="system">System Penetration</a></li>  
+                            </ul>
+                        </li> -->
+                        <li><a ui-sref="work">Work</a></li>
+                        <li><a ui-sref="photoshop">Photoshop</a></li>
+                        <li><a ui-sref="about">About</a></li>
+                      </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Body Section -->
+    <section id="bodyWeb" class="body-section">
+        <div class="container">
+            <div ui-view></div>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <section class="footer-section">
+        <div style="color:#777777">Copyright © 2015 Sarah Louise</div>
+    </section>
+
+</body>
+</html>
